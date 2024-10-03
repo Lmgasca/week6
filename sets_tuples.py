@@ -107,18 +107,18 @@ and you may call me V."""
 
 
 # Convert the text to a tuple of characters
-text_tuple = tuple(text)
-print(text_tuple)
-print(text_tuple.count('v'))
-print(text_tuple.count('V'))
+# text_tuple = tuple(text)
+# print(text_tuple)
+# print(text_tuple.count('v'))
+# print(text_tuple.count('V'))
 
 
 
-# Tuple to store the target characters
-small_v = text_tuple.count('v')
-capital_v = text_tuple.count('V')
-print(small_v)
-print(capital_v)
+# # Tuple to store the target characters
+# small_v = text_tuple.count('v')
+# capital_v = text_tuple.count('V')
+# print(small_v)
+# print(capital_v)
 
 
 
@@ -139,39 +139,49 @@ print(capital_v)
 # Define the dictionary
 
 
-sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# get length of the list
-print(len(sample_list)) # Output: 3
-#this is called a nested list
-# Extract and print the second element from the first list
+# sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# # get length of the list
+# print(len(sample_list)) # Output: 3
+# #this is called a nested list
+# # Extract and print the second element from the first list
+# # from the list
+# print(sample_list[0][1]) # output: 2
+# print(sample_list[1][2]) # output: 6
+# print(sample_list[2][0]) # output: 7
+# print(sample_list[0][0]) # output: 1
+# print(sample_list[2][1]) # output: 8
+
+# sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]} # list[] inside a dictionary{}
+# # Extract and print the second fruit from the list
+# print(sample_list_of_fruit["fruits"][1]) # output: 'banana'
+# print(sample_list_of_fruit["fruits"][2]) # output: 'cherry'
+# print(sample_list_of_fruit["fruits"][0]) # output: 'apple'
+
+# sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
+# # Extract and print the third element from the second list
+# print(sample_list_of_lists["lists"][1][2])
+# print(sample_list_of_lists["lists"][2][1])
+# print(sample_list_of_lists["lists"][0][2])
+# print(sample_list_of_lists["lists"][2][0])
+
+# sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
+# # Extract and print the age of the second person
+# print(sample_list_of_dicts["dicts"][1]["age"])
+# print(sample_list_of_dicts["dicts"][2]["name"])
+# print(sample_list_of_dicts["dicts"][0]["age"])
 
 
-sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
-# Extract and print the second fruit from the list
 
+# data = {
+#     "fruits": {"tropical": ["mango", "pineapple", "banana"], "berries": ["strawberry", "blueberry", "raspberry"]},
+#     "prices": {"mango": 1.5, "pineapple": 2.5, "banana": 0.5}
+# }
+# print(data["fruits"]["berries"][2])
+# print(data["prices"]["mango"])
+# print(data["prices"]["banana"])
 
-sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
-# Extract and print the third element from the second list
-
-
-
-
-sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
-# Extract and print the age of the second person
-
-
-
-
-
-
-data = {
-    "fruits": {"tropical": ["mango", "pineapple", "banana"], "berries": ["strawberry", "blueberry", "raspberry"]},
-    "prices": {"mango": 1.5, "pineapple": 2.5, "banana": 0.5}
-}
-
-
-# Extract and print the second item from the 'tropical' list
-print(data["fruits"]["tropical"][1])  # Output: 'pineapple'
+# # Extract and print the second item from the 'tropical' list
+# print(data["fruits"]["tropical"][1])  # Output: 'pineapple'
 
 
 
@@ -185,8 +195,8 @@ info = {
 
 # Extract and print the coach's name
 print(info["team"]["coach"]["name"])  # Output: 'John Doe'
-
-
+print(info["team"]["players"][-1]) # Output: Charlie
+print(info["location"])
 
 
 # Define the dictionary
@@ -206,8 +216,10 @@ company = {
 
 # Extract and print the second employee from the 'Engineering' department
 print(company["departments"]["Engineering"]["employees"][1])  # Output: 'Noah'
-
-
+print(company["departments"]["Engineering"]["budget"]) 
+second_budget = company["departments"]["Engineering"]["budget"]
+first_budget = company["departments"]["HR"]["budget"]
+print(first_budget + second_budget)
 # Define the dictionary
 school = {
     "class": {
